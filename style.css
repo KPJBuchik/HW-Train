@@ -6,6 +6,8 @@ background-position:center;
 background-repeat:no-repeat;
 background-size:100%;
 font-family: 'Maven Pro', sans-serif;
+box-shadow: 1px 0px 2px 1px;
+
 color:white;}
 
 .card-header{
@@ -42,6 +44,8 @@ body{background-image:url("https://images.unsplash.com/photo-1453053507108-9f545
   #space{color:black;}
 
 .card-body{margin-top:10px;
+  box-shadow: 1px 0px 2px 1px;
+
 background-color:#f0ead6;}
 
 
@@ -63,7 +67,7 @@ left:400px;}
 margin-bottom:0px;}
 
 
-.mb-4{background-color:#f0ead6}
+.mb-4{background-color:#f0ead6;}
 
 i{font-size:2em;}
 
