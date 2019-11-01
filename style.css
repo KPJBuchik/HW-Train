@@ -4,17 +4,20 @@
 .jumbotron {background-image:url("https://images.unsplash.com/photo-1525613168655-9a78036d9321?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
 background-position:center;
 background-repeat:no-repeat;
+background-size:100%;
 color:black;}
 
 .card-header{
   margin-bottom:5px;
 background-color:black;
 color:white;
+border-bottom:solid;
+border-width:1px;
 }
 .text-center{color:black;}
 
 
-#main-body{background-image:url("https://images.unsplash.com/photo-1453053507108-9f5456eb481f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+body{background-image:url("https://images.unsplash.com/photo-1453053507108-9f5456eb481f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
   background-attachment: fixed;
   background-position: center;
 
@@ -30,7 +33,27 @@ color:white;
 
   a{ text-decoration:none;
     color:white;}
-#schedule{border-right:solid;
-  border-width:1px;}
+
 
   #space{color:black;}
+
+.card-body{margin-top:10px;
+background-color:#f0ead6;}
+
+
+#welcome{background-color:#f0ead6;
+   box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+  border-radius:5px;
+  text-align:center;
+margin-right:800px;
+position:relative;
+left:400px;
+top:500px;}
+
+
+.header{background-color:#f0ead6;
+  text-align:center;
+margin-bottom:0px;}
+
+
+.mb-4{background-color:#f0ead6}
