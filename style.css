@@ -11,8 +11,8 @@ box-shadow: 1px 0px 2px 1px;
 color:white;}
 
 .card-header{
-  background-size:contain;
-  margin-bottom:5px;
+background-size:contain;
+margin-bottom:5px;
 color:black;
 border-bottom:solid;
 border-width:1px;
@@ -123,3 +123,7 @@ z-index:-1;}
 }
 
 #main-body{overflow:hidden;}
+
+.addTrain  {color:white;}
+
+.trainSched {color:white;}
