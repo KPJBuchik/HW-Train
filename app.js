@@ -15,7 +15,8 @@ var database = firebase.database();
 
 $("#add-train-button").on("click", function (event) {
     event.preventDefault();
-
+    if  ($(".form-control").val() !== "") {
+    ($(".alert-success").show())
     var trainName = $("#train-name-input").val().trim();
 
     var dest = $("#destination-input").val().trim();
@@ -47,9 +48,14 @@ $("#add-train-button").on("click", function (event) {
     $("#frequency-input").val("");
 
 
-
+    }
+    
+    else {($(".alert-danger").show())}
 
 });
+
+
+
 
 
 database.ref().on("child_added", function (childSnapshot) {
@@ -79,7 +85,7 @@ database.ref().on("child_added", function (childSnapshot) {
     var tMinutesTilTrain = frequency - tRemainder;
     console.log("MINUTES TILL TRAIN: " + tMinutesTilTrain);
 
-    var nextTrain = moment().add(tMinutesTilTrain, "minutes").format('hh:mm a');
+    var nextTrain = moment().add(tMinutesTilTrain, "minutes").format('hh:mm A');
     console.log("ARRIVAL TIME: " + moment(nextTrain).format("hh:mm a"));
 
     var newRow = $("<tr>").append(

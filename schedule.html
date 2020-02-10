@@ -17,22 +17,32 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
     </head>
 <body>
+    <div id="background">
+        <div class="nope"><a id="train-time" href="index.html"><i class="fas fa-home"></i></a> <div class="nav-items"> <a id="schedule" href="schedule.html"><i class="far fa-calendar-alt"></i></a>  <a id="view" href="main.html"><span id="space"> </span><i class="far fa-eye"></i> </a> 
 
-        <div class="card-header"><a href="index.html"><i class="fas fa-subway"></i> Train Time</a> <div class="nav-items"> <a id="schedule" href="schedule.html">Schedule Trains </a>  <a href="main.html"><span id="space"> </span>View Trains </a> <img src="pictures/traincartoon.png">
-
-        </div>
+ </div>
     </div>
+    <img id="nav-image" src="pictures/Nav-Bar.png">
 
-        <div class="container">
-                <div class="jumbotron" style="background-color: black; color: white">
-                    <h1 class="addTrain text-center">Add a Train</h1>
-                    <h3 class="text-center">CHOO CHOO</h3>
-                </div>
+
 
         <div class="row">
                 <div class="col-md-12">
                     <div class="card mb-4">
+
                         <div class="card-body">
+                            <p id="add-a-train"> ADD A TRAIN </p>
+                            <div class="alert alert-success" role="alert">
+                                Your train has been succesfully added to the database
+                              </div>
+                            <div class="alert alert-danger alert-dismissible" role="alert">
+                                Please finish filling out the form
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                              </div>
+                              
+
                             <form>
                                 <div class="form-group">
                                     <label for="train-name-input">Train Name</label>
@@ -45,7 +55,7 @@
                                         type="text" />
                                 </div>
                                 <div class="form-group">
-                                    <label for="start-input">First Train time</label>
+                                    <label for="start-input">First Train Time</label>
                                     <input class="form-control" id="first-train-input" placeholder=""
                                         type="text" />
                                 </div>
